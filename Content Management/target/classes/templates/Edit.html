@@ -1,0 +1,29 @@
+<body style="box-sizing: content-box; ">
+<form action="Edit.html" id="f" method="post" onclick="return validator()" ></form>
+<label style="width: 1000px; height: 200px;">Screen</label><br/>
+<textarea type="text" id="Screen"></textarea><br/>
+
+
+<label style="width: 1000px; height: 200px;">Description</label><br/>
+<textarea type="text" id="Description"></textarea><br/>
+
+<button type="submit" style="background-color: rgb(211, 199, 199); font-size: 15px; height: 40px; width: 60px;"> Save
+</button>
+<button type="submit"
+        style="background-color: rgb(211, 199, 199); font-size: 15px; height: 40px; width: 60px;"></button>
+
+</body>
+<script type="javascript">
+function validator(){
+var screen=document.form.screen.value;
+var description=document.form.description.value;
+
+if (screen==null || screen=="" || screen.length <=20){
+  alert("screen can't be blank");
+  return false;
+}else if(description==null || description==""){
+  alert("description can not be blank.");
+  return false;
+  }
+}
+</script>
